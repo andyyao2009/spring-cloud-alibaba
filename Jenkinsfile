@@ -9,7 +9,7 @@ echo "================"
 ls -l
 echo "================"
 '''
-        sh 'mvn clean package -Dmaven.test.skip=true'
+        sh 'mvn clean package -Dmaven.test.skip=true -gs settings.xml'
         sh '''echo "================"
 pwd
 echo "================"
