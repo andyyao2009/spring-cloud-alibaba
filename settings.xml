@@ -52,7 +52,7 @@ under the License.
    | Default: ${user.home}/.m2/repository
   <localRepository>D:\workspace_dev\java\maven\repository</localRepository>
   -->
-	<localRepository>D:\workspace_dev\java\maven\repository</localRepository>
+<!--	<localRepository>D:\workspace_dev\java\maven\repository</localRepository>-->
 
   <!-- interactiveMode
    | This will determine whether maven prompts you when it needs input. If set to false,
@@ -170,6 +170,22 @@ under the License.
 	  <name>阿里云公共仓库</name>
 	  <url>https://maven.aliyun.com/repository/public</url>
 	</mirror>
+
+   <!-- 阿里云仓库 -->
+    <mirror>
+      <id>alimaven</id>
+      <mirrorOf>central</mirrorOf>
+      <name>aliyun maven</name>
+      <url>https://maven.aliyun.com/nexus/content/repositories/central/</url>
+    </mirror>
+
+    <mirror>
+      <id>nexus-aliyun</id>
+      <mirrorOf>central</mirrorOf>
+      <name>Nexus aliyun</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+    </mirror>
+
   </mirrors>
 
   <!-- profiles
